@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>PHP Chess Board</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="keywords" content="PHP"/>
-        <meta name="description" content="PHP, Practice, GadCodes, ChessBoard"/>
-    </head>
-    <body>
-        <h1>Chess Board using Nested For Loop</h1>
-        <table style="board-table">
-        
-        </table>
-    </body>
-</html>
+<?php
+for ($row = 1; $row <= 8; $row++) {
+    echo "<tr>";
+    for ($column = 1; $column <= 10; $column++) {
+        $total = $row + $column;
+        if ($total % 2 == 0) {
+            echo "<td class='td-pink'></td>";
+        } else {
+            echo "<td class='td-grey'></td>";
+        }
+    }
+    echo "</tr>";
+}
+?>
