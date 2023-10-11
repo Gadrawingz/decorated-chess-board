@@ -1,5 +1,5 @@
 <?php
-for ($row = 1; $row <= 8; $row++) {
+for ($row = 1; $row <= 10; $row++) {
     echo "<tr>";
     for ($column = 1; $column <= 10; $column++) {
         $total = $row + $column;
